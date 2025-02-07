@@ -35,7 +35,7 @@ const AdminPanel = () => {
     // Check if user is admin
     useEffect(() => {
         axios
-            .get('http://localhost:3000/api/user/profile', {
+            .get('http://68.183.75.21:3000/api/user/profile', {
                 headers: { Authorization: 'Bearer ' + localStorage.getItem('token') },
             })
             .then((response) => {
@@ -53,7 +53,7 @@ const AdminPanel = () => {
 
     const getChallenges = (selectedCategory) => {
         axios
-            .get(`http://localhost:3000/api/chall/getChallenges/${selectedCategory}`, {
+            .get(`http://68.183.75.21:3000/api/chall/getChallenges/${selectedCategory}`, {
                 headers: { Authorization: 'Bearer ' + localStorage.getItem('token') },
             })
             .then((res) => setData(res.data.data))
@@ -71,7 +71,7 @@ const AdminPanel = () => {
 
         await axios
             .post(
-                `http://localhost:3000/api/chall/create/${category}`,
+                `http://68.183.75.21:3000/api/chall/create/${category}`,
                 {
                     name,
                     description,
@@ -113,7 +113,7 @@ const AdminPanel = () => {
 
         await axios
             .patch(
-                `http://localhost:3000/api/chall/update/${editingChallenge._id}`,
+                `http://68.183.75.21:3000/api/chall/update/${editingChallenge._id}`,
                 {
                     name,
                     description,

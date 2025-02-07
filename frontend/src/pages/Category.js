@@ -31,7 +31,7 @@ const Category = (props) => {
   useEffect(() => {
     if (once) {
       axios
-        .get("http://localhost:3000/api/chall/getChallenges/" + id, {
+        .get("http://68.183.75.21:3000/api/chall/getChallenges/" + id, {
           headers: {
             Authorization: "Bearer " + localStorage.getItem('token')
           }

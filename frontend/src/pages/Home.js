@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-        .get("http://localhost:3000/api/categories/getCategories", {
+        .get("http://68.183.75.21:3000/api/categories/getCategories", {
           headers: {
             Authorization: "Bearer " + localStorage.getItem('token')
           }

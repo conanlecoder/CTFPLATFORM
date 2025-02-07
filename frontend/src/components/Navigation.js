@@ -52,7 +52,7 @@ const Navigation = () => {
   useEffect(() => {
     axios({
       method: "get",
-      url: "http://localhost:3000/api/user/profile",
+      url: "http://68.183.75.21:3000/api/user/profile",
       headers: {
         "Content-Type": "application/json",
         "Authorization": "Bearer " + localStorage.getItem('token')

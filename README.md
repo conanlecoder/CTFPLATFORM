@@ -13,4 +13,4 @@ Avec docker:
 ```
 docker-compose up --build
 ```
-Et rendez vous simplement sur: http://localhost:3001/
+Et rendez vous simplement sur: http://68.183.75.21:3001/

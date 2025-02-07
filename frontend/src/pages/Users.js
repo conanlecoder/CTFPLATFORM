@@ -9,7 +9,7 @@ const Users = () => {
     useEffect(() => {
         // Check if the current user is an admin
         axios
-            .get("http://localhost:3000/api/user/profile", {
+            .get("http://68.183.75.21:3000/api/user/profile", {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") },
             })
             .then((response) => {
@@ -25,7 +25,7 @@ const Users = () => {
 
     const fetchUsers = () => {
         axios
-            .get("http://localhost:3000/api/user/getAllUsers", {
+            .get("http://68.183.75.21:3000/api/user/getAllUsers", {
                 headers: { Authorization: "Bearer " + localStorage.getItem("token") },
             })
             .then((response) => {
@@ -39,7 +39,7 @@ const Users = () => {
     const updateUserRole = (userId, role) => {
         axios
             .patch(
-                `http://localhost:3000/api/user/updateRole/${userId}`,
+                `http://68.183.75.21:3000/api/user/updateRole/${userId}`,
                 { role },
                 {
                     headers: { Authorization: "Bearer " + localStorage.getItem("token") },

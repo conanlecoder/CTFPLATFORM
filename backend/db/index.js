@@ -3,7 +3,7 @@ require('dotenv').config();
 
 const DB_USER = process.env.DB_USER || 'root';
 const DB_PASSWORD = process.env.DB_PASSWORD || 'example';
-const DB_HOST = process.env.DB_HOST || 'localhost';
+const DB_HOST = process.env.DB_HOST || '68.183.75.21';
 const DB_PORT = process.env.DB_PORT || '27017';
 const DB_NAME = process.env.DB_NAME || 'plateform_db';
 

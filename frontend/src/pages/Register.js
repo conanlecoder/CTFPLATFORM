@@ -27,7 +27,7 @@ const Register = () => {
     console.log(registerCity)
     axios({
       method: "post",
-      url: "http://localhost:3000/api/user/register/",
+      url: "http://68.183.75.21:3000/api/user/register/",
       headers: { "Content-Type": "application/json" },
       data: {
         "username": registerUname,

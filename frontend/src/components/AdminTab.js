@@ -9,7 +9,7 @@ const AdminTab = (props) => {
   const deleteForm = async () => {
     await axios({
       method: "delete",
-      url: "http://localhost:3000/api/chall/delete/" + chall._id,
+      url: "http://68.183.75.21:3000/api/chall/delete/" + chall._id,
       headers: {
         "Content-Type": "application/json",
         "Authorization": "Bearer " + localStorage.getItem('token')
@@ -34,7 +34,7 @@ const AdminTab = (props) => {
     var new_edit = "{" + edit + "}";
     await axios({
       method: "patch",
-      url: "http://localhost:3000/api/chall/update/" + chall._id,
+      url: "http://68.183.75.21:3000/api/chall/update/" + chall._id,
       headers: {
         "Content-Type": "application/json",
         "Authorization": "Bearer " + localStorage.getItem('token')
