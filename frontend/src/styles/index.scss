@@ -1,0 +1,140 @@
+@import "./mystyles";
+@import "./settings";
+@import "./components/navigation";
+@import "./pages/header";
+// Dark mode styles
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+
+  // Navbar
+  .navbar {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #444; // Add border to navbar
+  }
+
+  .navbar-item, .navbar-link {
+    color: #ffffff !important;
+
+    &:hover {
+      background-color: #2d2d2d;
+    }
+  }
+
+  .navbar-dropdown {
+    background-color: #1e1e1e;
+    border: 1px solid #444; // Add border to dropdown
+  }
+
+  .navbar-burger {
+    color: #ffffff; // Ensure burger icon is visible
+  }
+
+  // Buttons
+  .button {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border-color: #444;
+
+    &:hover {
+      background-color: #444;
+    }
+  }
+
+  .button.is-primary {
+    background-color: #3273dc;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #276cda;
+    }
+  }
+
+  .button.is-danger {
+    background-color: #ff3860;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #ff1f4b;
+    }
+  }
+
+  .button.is-success {
+    background-color: #23d160;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #20c95b;
+    }
+  }
+
+  .button.is-dark {
+    background-color: #363636;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #2d2d2d;
+    }
+  }
+
+  .button.is-link {
+    background-color: #3273dc;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #276cda;
+    }
+  }
+
+  // Tables
+  .table {
+    background-color: #1e1e1e;
+    color: #ffffff;
+
+    th, td {
+      border-color: #444; // Ensure table borders are visible
+      color: #ffffff; // Ensure text is visible
+    }
+
+    tr:hover {
+      background-color: #2d2d2d;
+    }
+  }
+
+  // Cards and boxes
+  .card, .box {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #444; // Add border to cards and boxes
+  }
+
+  // Inputs and forms
+  .input, .textarea, .select select {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border-color: #444;
+
+    &::placeholder {
+      color: #888;
+    }
+  }
+
+  // Progress bars
+  .progress {
+    background-color: #2d2d2d;
+
+    &::-webkit-progress-value {
+      background-color: #3273dc;
+    }
+
+    &::-moz-progress-bar {
+      background-color: #3273dc;
+    }
+  }
+
+  // Toast notifications
+  .toast-container {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+}
